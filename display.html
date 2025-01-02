@@ -187,15 +187,8 @@
           itemDetails.appendChild(gridContainer);
         }
 
-        	const testURL = 'https://github.com/SateeshBapanapalli/JS-Task/blob/main/data.json';
-	const myInit = {
-		method: 'HEAD',
-		mode: 'no-cors',
-	};
-
-	const myRequest = new Request(testURL, myInit);
-        // Fetch data from json
-        fetch(myRequest) 
+   // Fetch data from json
+        fetch("https://github.com/SateeshBapanapalli/JS-Task/blob/main/data.json") 
           .then((response) => {
             if (!response.ok) {
               throw new Error("Network response was not ok");
